@@ -3,7 +3,7 @@
 #include<conio.h>
 typedef struct queueNode{
 int data;
-struct queue *next;
+struct queueNode *next;
 }node;
 void enqueue(int);
 void dequeue();
@@ -33,6 +33,7 @@ default:
 exit(0);
 }
 }
+return 0;
 }
 void enqueue(int info)
 {
@@ -76,5 +77,4 @@ else
 front=front->next;
 free(temp);
 }
-return 0;
 }
